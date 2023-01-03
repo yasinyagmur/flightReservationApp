@@ -1,5 +1,4 @@
 from .base import *
-
 DATABASES = {
     "default": {
     "ENGINE": "django.db.backends.postgresql_psycopg2",
@@ -9,5 +8,5 @@ DATABASES = {
     "HOST": config("SQL_HOST"),
     "PORT": config("SQL_PORT"),
     "ATOMIC_REQUESTS": True,
-    }
+ }
 }
