@@ -18,3 +18,4 @@ class RegisterAPI(CreateAPIView):
         data["key"] = token.key
         headers = self.get_success_headers(serializer.data)
         return Response(data, status=status.HTTP_201_CREATED, headers=headers)
+    
